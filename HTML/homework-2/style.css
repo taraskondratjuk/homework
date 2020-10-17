@@ -1,0 +1,41 @@
+ body {
+background-color: blanchedalmond;
+
+ }
+
+ h6{
+     margin: 0;
+     color: crimson;
+     font-size: 35px;
+     text-align: center;
+     font-family: cursive;
+ }
+
+ h5{
+     color: crimson;
+     font-size: 20px;
+     text-align: left;
+     font-family: cursive;
+
+ }
+
+ img {
+     display: block;
+     width: 1300px;
+     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.description{
+    font-size: 20px;
+}
+
+
+.location{
+    text-align: center;
+     font-family: cursive;
+     font-size: 20px;
+     color: crimson;
+}
+
