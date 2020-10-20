@@ -1,0 +1,56 @@
+
+
+.big-black{
+    background: black;
+    height: 900px;
+    width: 1500px;
+    position: relative;
+}
+
+.orange-1{
+    background-color: orange;
+    width: 1500px;
+    height: 150px;
+    top: 0;
+}
+
+.orange-2{
+    background-color: orange;
+    width: 1500px;
+    height: 150px;
+    bottom: 0;
+    position: absolute;
+}
+
+.red{
+    top: 150px;
+    background-color: red;
+    width: 375px;
+    height: 600px;
+    float: left;
+}
+
+.green{
+    top: 150px;
+    background-color: green;
+    width: 375px;
+    height: 600px;
+    float: left;
+}
+
+.blue{
+    top: 150px;
+    background-color: blue;
+    width: 375px;
+    height: 600px;
+    float: left;
+}
+
+.black{
+    top: 150px;
+    background-color: black;
+    width: 375px;
+    height: 600px;
+    float: left;
+}
+
