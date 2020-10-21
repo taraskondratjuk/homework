@@ -1,25 +1,26 @@
 
-
 .big-black{
     background: black;
     height: 900px;
     width: 1500px;
-    position: relative;
 }
 
 .orange-1{
     background-color: orange;
     width: 1500px;
-    height: 150px;
-    top: 0;
+    height: 750px;
 }
 
 .orange-2{
     background-color: orange;
     width: 1500px;
     height: 150px;
-    bottom: 0;
-    position: absolute;
+}
+
+.orange{
+    width: 1500px;
+    height: 150px;
+    background-color: orange;
 }
 
 .red{
