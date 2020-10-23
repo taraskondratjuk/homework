@@ -1,5 +1,4 @@
 
-
 .top-menu {
     margin-left: 250px;
     height: 35px;
@@ -16,7 +15,7 @@
 }
 
 
-.body-site{
+.body-site {
     color: white;
     height: 130px;
     width: 1500px;
@@ -25,16 +24,17 @@
     justify-content: space-around;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: "Comic Sans MS",cursive;
+    font-family: "Comic Sans MS", cursive;
 
 }
 
-.item-left{
+.item-left {
     display: flex;
     align-items: center;
 
 }
-.item-center{
+
+.item-center {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -42,24 +42,21 @@
 
 }
 
-.first-main-item{
+.first-main-item {
     font-size: 35px;
     margin-top: 30px;
 
 }
 
-.second-main-item{
+.second-main-item {
     font-size: smaller;
 }
-.item-right{
+
+.item-right {
     display: flex;
     align-items: center;
 
 }
-
-
-
-
 
 
 .bottom-menu {
