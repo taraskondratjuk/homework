@@ -213,7 +213,3 @@
 // for (let count of getAllElementsFcRules) {
 //     count.style.color = "red";
 // }
-
-
-
-
