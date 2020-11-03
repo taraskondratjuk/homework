@@ -10,10 +10,10 @@
 //     console.log(getAllElementsClass);
 //
 //
-
+//
 
 // - знайти всі параграфи ,та змінити текст на hello oktenweb!
-
+//
 // let getAllParagraph = document.getElementsByTagName("p");
 // for (let i = 0; i < getAllParagraph.length; i++) {
 //     getAllParagraph[i].innerText = "hello oktenweb!";
@@ -21,7 +21,9 @@
 
 //
 //
-
+//
+///
+///
 //  - знайти всі div та змінити ім колір на червоний
 
 // let getAllDiv = document.getElementsByTagName("div");
