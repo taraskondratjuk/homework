@@ -28,25 +28,60 @@
 // - створити функцію яка приймає три числа та виводить та повертає найменьше.
 
 // function snowMinNumber(numberFirst, numberSecond, numberThird) {
-//     let min=Math.min(numberFirst, numberSecond, numberThird);
-//     console.log(min);
-//     return min;
+//     let min = 0;
+//
+//     if (numberFirst > numberSecond) {
+//         if (numberSecond > numberThird) {
+//             min = numberThird;
+//         } else {
+//             min = numberSecond;
+//         }
+//     }
+//
+//         if (numberSecond > numberThird) {
+//             if (numberThird > numberFirst) {
+//                 min = numberFirst;
+//             } else {
+//                 min = numberThird;
+//             }
+//         }
+//
+//         if (numberThird > numberFirst) {
+//             if (numberFirst > numberSecond) {
+//                 min = numberSecond;
+//             } else {
+//                 min = numberFirst;
+//             }
+//         }
+//
+//         console.log(min);
+//         return min;
+//
 // }
 //
-// snowMinNumber(1,8,148);
-//
+// snowMinNumber(200, 170, 180);
 
 
 // -----------------------------------------------Task 4-----------------------------------------------------------
 // - створити функцію яка приймає три числа та виводить та повертає найбільше.
 
 // function snowMaxNumber(numberFirst, numberSecond, numberThird) {
-//     let max=Math.max(numberFirst, numberSecond, numberThird);
+//     let max = 0;
+//
+//     if (numberFirst > numberSecond) {
+//         max = numberFirst;
+//     } else if (numberSecond > numberThird) {
+//         max = numberSecond;
+//     } else if (numberThird > numberFirst) {
+//         max = numberThird;
+//     }
+//
+//
 //     console.log(max);
 //     return max;
 // }
 //
-// snowMaxNumber(25,-8,88);
+// snowMaxNumber(-2, -8, -5);
 
 
 // -----------------------------------------------Task 5-----------------------------------------------------------
