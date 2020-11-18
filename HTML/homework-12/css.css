@@ -1,0 +1,76 @@
+/*-----------------------------------------------Task 1--------------------------------------------------------*/
+
+/*form{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+
+/*}*/
+/*label{*/
+/*    display: flex;*/
+/*    font-family: cursive;*/
+/*    color: darkblue;*/
+/*}*/
+
+/*textarea{*/
+/*    display: flex;*/
+/*    width: 650px;*/
+
+
+/*}*/
+
+
+/*-----------------------------------------------Task 3--------------------------------------------------------*/
+/*div {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin-top: 100px;*/
+/*}*/
+
+/*form {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+
+/*}*/
+
+/*label {*/
+/*    display: flex;*/
+/*    font-family: cursive;*/
+/*    color: darkblue;*/
+/*}*/
+
+/*textarea {*/
+/*    display: flex;*/
+/*    width: 650px;*/
+
+
+/*}*/
+
+/*#left {*/
+/*    margin-right: 20px;*/
+/*    margin-top: 60px;*/
+/*}*/
+
+/*#right {*/
+/*    margin-left: 20px;*/
+/*    margin-top: 60px;*/
+/*}*/
+
+/*#button-save {*/
+/*    margin-left: 270px;*/
+
+/*}*/
+
+/*#button-save:active {*/
+/*    background-color: #0aa9a9;*/
+
+/*}*/
+
+/*#left:active {*/
+/*    background-color: #730404;*/
+/*}*/
+
+/*#right:active {*/
+/*    background-color: #730404;*/
+/*}*/
