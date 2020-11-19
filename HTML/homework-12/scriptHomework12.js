@@ -104,12 +104,13 @@
 //
 //
 // getSaveButton.addEventListener("click", function (key) {
+//     ++count;
 //     localStorage.setItem(`AreaText${count}`, getTextArea.value);
-//     count++;
 //     localStorage.setItem("count", count);
 // })
 //
 // getLeftButton.addEventListener("click", function () {
+//
 //
 //
 //     if (countRight > 0) {
@@ -123,9 +124,12 @@
 //
 // getRightButton.addEventListener("click", function () {
 //
-//     getTextArea.innerText = localStorage.getItem(`AreaText${countRight}`)
-//     countRight++;
-//     localStorage.setItem("countRight", countRight);
+//     if (countRight <= count) {
+//
+//         getTextArea.innerText = localStorage.getItem(`AreaText${countRight}`)
+//         countRight++;
+//         localStorage.setItem("countRight", countRight);
+//     }
 // })
 //
 //
@@ -141,48 +145,122 @@
 // --Каждому контакту добавить кнопку редактироваиня. При нажати на нее появляется форма, в которой есть
 // все необходимые инпуты для редактирования, которые уже заполнены данными объекта
 
-let getName = document.getElementById("name");
-let getPhoneNumber = document.getElementById("phoneNumber");
-let getEmail = document.getElementById("email");
-let getCompany = document.getElementById("company");
-let getDepartment = document.getElementById("department");
-let getBirthDay = document.getElementById("birthDay");
-
-let getCreateUserButton = document.getElementById("create-user");
-
-let getUserPlace = document.getElementById("users");
-
-let count = localStorage.getItem("count",);
-
-getCreateUserButton.addEventListener("click", function () {
-    count++;
-
-    let user = [
-        {id: `${count}`},
-        {name: `${getName.value}`},
-        {phone: `${getPhoneNumber.value}`},
-        {email: `${getEmail.value}`},
-        {company: `${getCompany.value}`},
-        {department: `${getDepartment.value}`},
-        {birthday: `${getBirthDay.value}`}
-    ];
-
-    localStorage.setItem("count", count)
-
-    let userStringify = JSON.stringify(user)
-    localStorage.setItem(`user${count}`, userStringify)
-
-
-    CreateUsersBox();
-
-});
-
-
-function CreateUsersBox() {
-
-
-}
-
+// let getName = document.getElementById("name");
+// let getPhoneNumber = document.getElementById("phoneNumber");
+// let getEmail = document.getElementById("email");
+// let getCompany = document.getElementById("company");
+// let getDepartment = document.getElementById("department");
+// let getBirthDay = document.getElementById("birthDay");
+// let getCreateUserButton = document.getElementById("create-user");
+// let getUserPlace = document.getElementById("users");
+// let count = localStorage.getItem("count",);
+//
+//
+// getCreateUserButton.addEventListener("click", function () {
+//     count++;
+//
+//     let user = {
+//         id: `${count}`,
+//         name: `${getName.value}`,
+//         phone: `${getPhoneNumber.value}`,
+//         email: `${getEmail.value}`,
+//         company: `${getCompany.value}`,
+//         department: `${getDepartment.value}`,
+//         birthday: `${getBirthDay.value}`
+//
+//     };
+//
+//     localStorage.setItem("count", count)
+//     let userStringify = JSON.stringify(user)
+//     localStorage.setItem(`user${count}`, userStringify)
+// });
+//
+//
+// for (let i = 1; i <= count; i++) {
+//     let getUserCopy = localStorage.getItem(`user${i}`)
+//     let getUser = JSON.parse(getUserCopy);
+//
+//     let userDiv = document.createElement("div");
+//     userDiv.style.marginTop = "15px"
+//     userDiv.style.backgroundColor = "grey"
+//     userDiv.id = `${i}`;
+//
+//     userDiv.innerText = `Імя : ${getUser.name}, ` + ` Телефон : ${getUser.phone}, ` + ` email : ${getUser.email},` + ` Компанія : ${getUser.company}, ` +
+//         ` Відділ : ${getUser.department}, ` + ` День народження : ${getUser.birthday}`;
+//     getUserPlace.appendChild(userDiv);
+//
+//
+//     let deleteButton = document.createElement("button");
+//     deleteButton.appendChild(document.createTextNode("Видалити"));
+//     deleteButton.style.marginLeft = "20px";
+//     deleteButton.id = `${i}`;
+//     userDiv.appendChild(deleteButton)
+//
+//
+//     deleteButton.addEventListener("click", function (event) {
+//         let id = event.target.id;
+//         let getElement = document.getElementById(`${id}`);
+//         getElement.remove();
+//
+//         localStorage.removeItem(`user${id}`);
+//         count--;
+//         localStorage.setItem("count", count);
+//     });
+//
+//
+//
+//     let editButton = document.createElement("button");
+//     editButton.style.marginLeft = "20px";
+//     editButton.id = `${i}`;
+//     userDiv.appendChild(editButton)
+//     editButton.appendChild(document.createTextNode("Редагувати"));
+//
+//
+//
+//     editButton.addEventListener("click", function (event) {
+//         let id = event.target.id;
+//         //let getElement = document.getElementById(`${id}`);
+//         let getEditUserCopy = localStorage.getItem(`user${id}`);
+//         let getEditUser = JSON.parse(getEditUserCopy);
+//
+//
+//
+//         getCreateUserButton.style.display = "none"
+//
+//
+//         let getForm = document.getElementById("form")
+//
+//         let createEditButton = document.createElement("button");
+//         createEditButton.innerText = "Редагувати";
+//         getForm.appendChild(createEditButton);
+//
+//
+//         getName.value = getEditUser.name;
+//         getPhoneNumber.value = getEditUser.phone;
+//         getEmail.value = getEditUser.email
+//         getCompany.value = getEditUser.company;
+//         getDepartment.value = getEditUser.department;
+//         getBirthDay.value = getEditUser.birthday;
+//
+//
+//         createEditButton.addEventListener("click", function () {
+//
+//             let user = {
+//                 id: `${count}`,
+//                 name: `${getName.value}`,
+//                 phone: `${getPhoneNumber.value}`,
+//                 email: `${getEmail.value}`,
+//                 company: `${getCompany.value}`,
+//                 department: `${getDepartment.value}`,
+//                 birthday: `${getBirthDay.value}`
+//
+//             };
+//
+//             let userStringify = JSON.stringify(user)
+//             localStorage.setItem(`user${id}`, userStringify)
+//         })
+//     })
+// }
 
 
 
