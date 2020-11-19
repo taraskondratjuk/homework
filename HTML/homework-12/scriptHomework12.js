@@ -40,6 +40,16 @@
 //
 // })
 //
+// getInputText.value = localStorage.getItem("inputText")
+//
+// getTextArea.value = localStorage.getItem("textarea")
+//
+// getSelect.value = localStorage.getItem("choseLanguage")
+//
+// getCheckboxYes.value = localStorage.getItem("checkboxYes")
+//
+// getCheckboxNo.value = localStorage.getItem("checkboxNo")
+//
 // let countCheckboxYes = 0;
 //
 // getCheckboxYes.addEventListener("click", function () {
@@ -64,31 +74,22 @@
 //     localStorage.setItem("checkboxNo", "checked")
 // })
 //
+//
 // if (localStorage.getItem("checkboxYes") === "checked") {
 //     getCheckboxYes.setAttribute("checked", "")
 //     countCheckboxYes = 1;
 // }
+//
 // if (localStorage.getItem("checkboxNo") === "checked") {
 //     getCheckboxNo.setAttribute("checked", "")
 //     countCheckboxNo = 1;
 // }
-//
-// getInputText.value = localStorage.getItem("inputText")
-//
-// getTextArea.value = localStorage.getItem("textarea")
-//
-// getSelect.value = localStorage.getItem("choseLanguage")
-//
-// getCheckboxYes.value = localStorage.getItem("checkboxYes")
-//
-// getCheckboxNo.value = localStorage.getItem("checkboxNo")
 
 
 // -----------------------------------------------Task 3--------------------------------------------------------
 // -Дан текстареа. В него можно ввести данные, нажать кнопку "сохранить" и они "фикисруются" (в хранилище), затем поредактировать их, затем еще поредактировать и возможно еще.....
 // Требование : хранить историю своих изменений (даже после перезагрузки страницы).
 // Сверху над текстареа должны появится стрелочки, с помощью которых можно перемещаться по истории (не забудьте!чекпоинт истории - нажатеи кнопки сохранить).
-
 
 
 // let getLeftButton = document.getElementById("left")
@@ -130,5 +131,63 @@
 //
 // let getTextArea = document.getElementById("text");
 // getTextArea.innerText = localStorage.getItem(`AreaText${count}`)
-//
+
+
+// -----------------------------------------------Task 4--------------------------------------------------------
+// - Реализуйте записную книгу, хранящую данные в локальном хранилище.
+//     Данные которые надо сохранять : ФИО, номер, почта, фирма, отдел, день рождения
+// Данные вводить через соответсвующую форму.
+// --Каждому контакту добавить кнопку для удаления контакта.
+// --Каждому контакту добавить кнопку редактироваиня. При нажати на нее появляется форма, в которой есть
+// все необходимые инпуты для редактирования, которые уже заполнены данными объекта
+
+let getName = document.getElementById("name");
+let getPhoneNumber = document.getElementById("phoneNumber");
+let getEmail = document.getElementById("email");
+let getCompany = document.getElementById("company");
+let getDepartment = document.getElementById("department");
+let getBirthDay = document.getElementById("birthDay");
+
+let getCreateUserButton = document.getElementById("create-user");
+
+let getUserPlace = document.getElementById("users");
+
+let count = localStorage.getItem("count",);
+
+getCreateUserButton.addEventListener("click", function () {
+    count++;
+
+    let user = [
+        {id: `${count}`},
+        {name: `${getName.value}`},
+        {phone: `${getPhoneNumber.value}`},
+        {email: `${getEmail.value}`},
+        {company: `${getCompany.value}`},
+        {department: `${getDepartment.value}`},
+        {birthday: `${getBirthDay.value}`}
+    ];
+
+    localStorage.setItem("count", count)
+
+    let userStringify = JSON.stringify(user)
+    localStorage.setItem(`user${count}`, userStringify)
+
+
+    CreateUsersBox();
+
+});
+
+
+function CreateUsersBox() {
+
+
+}
+
+
+
+
+
+
+
+
 
